@@ -27,7 +27,7 @@ describe('Post.vue', () => {
 
     comp.link = 'http://fullstackdaily.com'
 
-    Vue.nextTick( () => {
+    Vue.nextTick(() => {
       expect(comp.$el.querySelector('.card-footer-item').getAttribute('href'))
         .to.equal('http://fullstackdaily.com')
       done()
